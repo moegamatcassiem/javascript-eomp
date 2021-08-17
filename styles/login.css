@@ -1,0 +1,121 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#Login {
+  background-color: rgb(0, 0, 50);
+  color: #999;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-name{
+  margin: 40px;
+  letter-spacing: 3px;  
+  font-size: 30px;
+  color: #fff;
+  text-shadow:
+    /* White glow */
+    0 0 12px #FF5F1F,
+    0 0 17px #FF5F1F,
+    0 0 21px #FF5F1F,
+    /* Green glow */
+    0 0 42px #800080 ,
+    0 0 82px #800080 ,
+    0 0 92px #800080 ,
+    0 0 102px #800080 ,
+    0 0 151px #800080 ;
+}
+
+
+.log-head {
+  margin: 40px;
+  letter-spacing: 3px;
+}
+
+.form-item {
+  padding: 10px;
+}
+
+input {
+  width: 500px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  color: #ff5f1f;
+  background-color: rgb(0, 0, 50);
+  border-bottom: 1px solid #ff5f1f;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  text-decoration: #FF5F1F;
+}
+
+.boarder{
+  background-color: rgb(0, 0, 50);
+  width: 100vw;
+  height: 10vh;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: rgb(0, 0, 50);
+  color: #ff5f1f;
+  line-height: 42px;
+  font-size: small;
+}
+.btn span {
+  background: rgb(0, 0, 50);
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  border: 1px solid #ff5f1f;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  right: 45%;
+}
+.btn span:nth-child(1) {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn:hover span:nth-child(2) {
+  color: #ff5f1f;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}

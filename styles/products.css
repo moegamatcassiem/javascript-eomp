@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #151623;
+    background-image: url(../images/cigars-whisky-drink-whiskey-wallpaper-preview.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .store-name{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    letter-spacing: 3px;  
+    font-size: 30px;
+    color: #fff;
+    text-shadow:
+      /* White glow */
+      0 0 12px #FF5F1F,
+      0 0 17px #FF5F1F,
+      0 0 21px #FF5F1F,
+      /* Green glow */
+      0 0 42px #800080 ,
+      0 0 82px #800080 ,
+      0 0 92px #800080 ,
+      0 0 102px #800080 ,
+      0 0 151px #800080 ;
+  }
+
+  #container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .products {
+    width: 20%;
+    height: 20vh; 
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    color: white;
+  }
+  
+  button {
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: #111;
+    border: 1px solid #FF5F1F;
+    color: #999;
+    letter-spacing: 3px;
+  }
+
+  button:hover {
+    color: #FF5F1F;
+    transition: 0.3s;
+    border: 1px solid #111;
+  }

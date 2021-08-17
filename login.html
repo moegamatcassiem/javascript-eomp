@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/background.css" />
+  </head>
+  <body>
+    <div id="Login">
+      <div class="store-name"><h1 class="title">Dallas Liquors</h1></div>
+
+      <div class="log-head"><h1 class="head">Login</h1></div>
+
+      <div class="login_items">
+        <div class="log-form">
+          <form action="https://flaskeomp.herokuapp.com/auth/" method="POST">
+            <div class="form-item">
+              <div class="Enter">Username</div>
+              <div class="input-head"></div>
+              <div class="input"><input id="info" type="text" /></div>
+            </div>
+
+            <div class="form-item">
+              <div class="Enter">Password</div>
+              <div class="input-head"></div>
+              <div class="input"><input id="info" type="text" /></div>
+            </div>
+            <div class="btn">
+              <button class="btn"><span>Click!</span><span>Login</span><a href="./products.html"></a></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="boarder">
+      <div class="link">
+        <a href="./index.html"><span style="color: #ff5f1f; text-decoration: none;">Not a user ? Register now </span></a>
+      </div>
+    </div>
+    <script src="./background.js"></script>
+    <script src="./login.js"></script>
+  </body>
+</html>
