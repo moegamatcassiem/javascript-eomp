@@ -1,72 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #151623;
-    background-image: url(../images/cigars-whisky-drink-whiskey-wallpaper-preview.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .store-name{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    letter-spacing: 3px;  
-    font-size: 30px;
-    color: #fff;
-    text-shadow:
-      /* White glow */
-      0 0 12px #FF5F1F,
-      0 0 17px #FF5F1F,
-      0 0 21px #FF5F1F,
-      /* Green glow */
-      0 0 42px #800080 ,
-      0 0 82px #800080 ,
-      0 0 92px #800080 ,
-      0 0 102px #800080 ,
-      0 0 151px #800080 ;
-  }
+body {
+  background-color: rgb(0, 0, 50);
+  color: white;
+  font-family: sans-serif;
+}
 
-  #container{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .products {
-    width: 20%;
-    height: 20vh; 
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    overflow: hidden;
-    color: white;
-  }
-  
-  button {
-    font-size: 20px;
-    height: 50px;
-    width: 200px;
-    background-color: #111;
-    border: 1px solid #FF5F1F;
-    color: #999;
-    letter-spacing: 3px;
-  }
+.store-name {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow:
+      /* White glow */ 0 0 12px #ff5f1f, 0 0 17px #ff5f1f,
+    0 0 21px #ff5f1f, /* Green glow */ 0 0 42px #800080, 0 0 82px #800080,
+    0 0 92px #800080, 0 0 102px #800080, 0 0 151px #800080;
+}
 
-  button:hover {
-    color: #FF5F1F;
-    transition: 0.3s;
-    border: 1px solid #111;
-  }
+.page-stuff{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 2%;
+}
+
+#search {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: black;
+  width: 999px;
+  height: 10px;
+  padding: 25px;
+  /* position: fixed; */
+  top: 15%;
+  left: 25%;
+  z-index: 100;
+}
+
+.add-container {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #ff5f1f;
+  width: 999px;
+  height: 10px;
+  padding: 25px;
+  /* position: fixed; */
+  top: 20%;
+  left: 25%;
+  z-index: 100;
+}
+
+#productName {
+  height: 50px;
+  width: 40%;
+}
+
+#productId {
+  height: 50px;
+  width: 40%;
+}
+
+#productQuantity {
+  height: 50px;
+  width: 40%;
+}
+
+#productPrice {
+  height: 50px;
+  width: 40%;
+}
+
+.products {
+  /* width: 40%; */
+  height: 20vh;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  color: white;
+  width: 25%;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+
+.product-name {
+  margin-bottom: 3%;
+  justify-content: center;
+}
+
+.product-price {
+  margin-bottom: 2%;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  background-color: rgb(0, 0, 50);
+  border: 1px solid #ff5f1f;
+  color: #999;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  color: #ff5f1f;
+  transition: 0.3s;
+  border: 1px solid #111;
+}

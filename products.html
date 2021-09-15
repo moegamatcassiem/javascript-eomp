@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="./styles/products.css">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/3285114a98.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/products.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+  </head>
+  <body>
+    <nav class="cartbar">
+      <ul class="cartbar-links">
+        <div class="total">
+          <div class="total"></div>
+          <div class="amount"></div>
+        </div>
+        <div class="cart"></div>
+      </ul>
+      <button class="cartbar-button" onclick="toggleCartbar()">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+    </nav>
+
     <div class="store-name"><h1 class="title">Dallas Liquors</h1></div>
 
-    <div class="page"><div id="container"></div></div>
+    <div class="page-stuff">
 
+    <input id="search" type="text" placeholder="Search..." />
+      <div class="add-container">
+        <h2 class="add-head">Add product</h2>
+        <form class="dafe">
+          <input
+            class="inputs"
+            type="text"
+            id="productId"
+            name="product_id"
+            placeholder="Enter the id..."
+            required
+          />
+          <input
+            class="inputs"
+            type="text"
+            id="productName"
+            name="product_name"
+            placeholder="Enter a name..."
+            required
+          />
+          <input
+            class="inputs"
+            type="text"
+            id="productPrice"
+            name="product_price"
+            placeholder="Enter a price..."
+            required
+          />
+          <input
+            class="inputs"
+            type="text"
+            id="productQuantity"
+            name="product_quantity"
+            placeholder="Enter a quantity..."
+            required
+          />
+          <button onclick="event.preventDefault(), addProducts()">Add</button>
+        </form>
+      </div>
+
+      <div class="page"><div class="container"></div></div>
     </div>
 
-     
-    <script src="./products.js"></script>
-</body>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/cart.js"></script>
+  </body>
 </html>

@@ -15,6 +15,8 @@
   align-items: center;
 }
 
+
+
 .store-name{
   margin: 40px;
   letter-spacing: 3px;  
@@ -35,7 +37,7 @@
 
 
 .log-head {
-  margin: 40px;
+  margin: 40;
   letter-spacing: 3px;
 }
 
